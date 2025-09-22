@@ -1,0 +1,5 @@
+const Person = require('./person.js')
+const bob = new Person()
+console.log(bob)
+console.log('name: ' + bob.name)
+console.log(`age: ${bob.getAge()}`)
