@@ -6,6 +6,21 @@ class Person{
         this.#name = name
     }
 
+    printPerson() {
+        console.log(this.#name + ', age ' + this.#age + ' years')
+    }
+
+    becomeOlder() {
+        this.#age++
+    }
+
+    isAdult() {
+        if (this.#age < 18) {
+            return false
+        }
+        return true
+    }
+
     setName(name){
         this.#name = name
     }
