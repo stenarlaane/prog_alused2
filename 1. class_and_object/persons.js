@@ -17,6 +17,15 @@ for (let i = 0; i < 20; i++) {
     brian.becomeOlder()
 }
 
+bob.setWeight(83)
+bob.setHeight(1.84)
+
+brian.setWeight(87)
+brian.setHeight(1.89)
+
+alice.setWeight(68)
+alice.setHeight(1.76)
+
 bob.printPerson()
 brian.printPerson()
 alice.printPerson()
@@ -29,3 +38,10 @@ persons.forEach(person => {
     }
 }) 
 
+persons.forEach(person => {
+    if (person.getBMI() !== false) {
+        console.log(person.getName() + ` has a BMI of: ${person.getBMI()}`)
+    } else {
+        console.log(`BMI is unavailable, make sure your weight or height isn't 0.`)
+    }
+})
