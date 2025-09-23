@@ -40,7 +40,7 @@ class Person{
     }
 
     getBMI() {
-        if (this.#height <= 0 || this.#weight <= 0) {
+        if (this.#height <= 0 || this.#weight <= 0 || isNaN(this.#height) || isNaN(this.#weight)) {
             return false;
         }
         const bmi = (this.#weight / this.#height ** 2)
